@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
-    <link rel="stylesheet" href="style-profile.css">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         .container {
     margin: 0;
@@ -15,14 +15,14 @@
     height: 1300px;
 }
 
+ul a {
+    text-decoration: none;
+}
+
 .header {
     width: 100%;
     height: 80px;
     background: #FFFFFF;
-}
-
-.header nav a {
-    text-decoration: none;
 }
 
 .img-header {
@@ -73,6 +73,7 @@
     display: flex;
     align-items: center;
     letter-spacing: 1px;
+    color: #3366FF;
 }
 
 .li2-nav-header {
@@ -109,6 +110,16 @@
     color: #373A42;
 }
 
+.hr-nav-header {
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    left: 533px;
+    top: 61px;
+    background: #3366FF;
+    border-radius: 10px;
+}
+
 .h3-header {
     position: absolute;
     width: 200px;
@@ -124,9 +135,10 @@
 
 .main {
     position: absolute;
-    width: 926px;
-    height: 700px;
-    left: 500px;
+    box-sizing: border-box;
+    width: 1126px;
+    height: 710px;
+    left: 120px;
     top: 140px;
     background: #FFFFFF;
     border-radius: 30px;
@@ -134,21 +146,15 @@
 
 .container-main {
     position: absolute;
-    box-sizing: border-box;
-    width: 48%;
+    width: 50%;
     height: 100%;
-    background: #FFFFFF;
-    border-radius: 15px;
 }
 
 .container2-main {
     position: absolute;
-    box-sizing: border-box;
-    width: 48%;
-    height: 60%;
-    left: 52%;
-    background: #FFFFFF;
-    border-radius: 15px;
+    width: 50%;
+    height: 100%;
+    left: 50%;
 }
 
 .h1-container-main {
@@ -206,7 +212,7 @@
     position: absolute;
     width: 285px;
     height: 172.7px;
-    left: 125px;
+    left: 140px;
     top: 200px;
     background: #FFA000;
     border-radius: 20px;
@@ -480,7 +486,7 @@
     color: #373A42;
 }
 
-/* .h3-container2-main {
+.h3-container2-main {
     position: absolute;
     width: 42px;
     height: 21px;
@@ -493,25 +499,9 @@
     line-height: 21px;
     letter-spacing: 0.5px;
     color: #373A42;
-} */
-
-.h3-container2-main2 {
-    position: absolute;
-    width: 100px;
-    height: 21px;
-    left: 100px;
-    top: 135px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0.5px;
-    color: #373A42;
 }
 
-.h3-container2-main3 {
-
+.h3-container2-main2 {
     position: absolute;
     width: 110px;
     height: 21px;
@@ -526,7 +516,7 @@
     color: #373A42;
 }
 
-.h3-container2-main4 {
+.h3-container2-main3 {
     position: absolute;
     width: 110px;
     height: 21px;
@@ -541,7 +531,22 @@
     color: #373A42;
 }
 
-/* .h3-container2-main5 {
+.h3-container2-main4 {
+    position: absolute;
+    width: 110px;
+    height: 21px;
+    left: 100px;
+    top: 255px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    color: #373A42;
+}
+
+.h3-container2-main5 {
     position: absolute;
     width: 200px;
     height: 21px;
@@ -553,16 +558,16 @@
     font-size: 14px;
     line-height: 21px;
     text-align: right;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     color: #3366FF;
-} */
+}
 
 .h3-container2-main6 {
     position: absolute;
     width: 200px;
     height: 21px;
     right: 50px;
-    top: 135px;
+    top: 175px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -573,12 +578,12 @@
     color: #3366FF;
 }
 
-.h3-container2-main7 {    
+.h3-container2-main7 {
     position: absolute;
     width: 200px;
     height: 21px;
     right: 50px;
-    top: 175px;
+    top: 215px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -594,7 +599,7 @@
     width: 200px;
     height: 21px;
     right: 50px;
-    top: 215px;
+    top: 255px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -610,7 +615,7 @@
     width: 400px;
     height: 40px;
     left: 100px;
-    top: 300px;
+    top: 322px;
     background: #3366FF;
     box-shadow: 0px 8px 10px rgba(35, 149, 255, 0.3);
     border-radius: 15px;
@@ -684,7 +689,6 @@
 
 .wa-footer {
     position: absolute;
-    width: 18px;
     left: 230px;
     top: 160px;
 }
@@ -956,650 +960,6 @@
     color: #C1C5D0;
 }
 
-.profile-main {
-    position: absolute;
-    height: 30px;
-    left: 60px;
-    top: 45px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 1px;
-    color: #373A42;
-}
-
-.h3-main {
-    position: absolute;
-    width: 46px;
-    height: 21px;
-    left: 65px;
-    top: 120px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #373A42;
-}
-
-.h3-main2 {
-    position: absolute;
-    width: 46px;
-    height: 21px;
-    left: 65px;
-    top: 180px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #373A42;
-}
-
-.h3-main3 {
-    position: absolute;
-    width: 46px;
-    height: 21px;
-    left: 65px;
-    top: 240px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #373A42;
-}
-
-.h3-main4 {
-    position: absolute;
-    width: 100px;
-    height: 21px;
-    left: 65px;
-    top: 300px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #373A42;
-}
-
-.h3-main5 {
-    position: absolute;
-    width: 46px;
-    height: 21px;
-    left: 65px;
-    top: 360px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #373A42;
-}
-
-.h3-main6 {
-    position: absolute;
-    width: 46px;
-    height: 21px;
-    left: 65px;
-    top: 420px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #373A42;
-}
-
-.h3-main7 {
-    position: absolute;
-    width: 46px;
-    height: 21px;
-    left: 65px;
-    top: 480px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #373A42;
-}
-
-.h3-main8 {
-    position: absolute;
-    width: 100px;
-    height: 21px;
-    left: 65px;
-    top: 540px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #373A42;
-}
-
-.h4-main {
-    position: absolute;
-    width: 190px;
-    height: 21px;
-    left: 260px;
-    top: 120px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #777777;
-    border: 2px solid #C1C5D0;
-    padding: 10px 50px 10px 20px;
-    border-radius: 10px;
-}
-
-.h4-main2 {
-    position: absolute;
-    width: 65px;
-    height: 21px;
-    left: 260px;
-    top: 170px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #777777;
-}
-
-.h4-main3 {
-    position: absolute;
-    width: 65px;
-    height: 21px;
-    left: 260px;
-    top: 230px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #777777;
-}
-
-.h4-main4 {
-    position: absolute;
-    width: 65px;
-    height: 21px;
-    left: 260px;
-    top: 290px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #777777;
-}
-
-.h4-main5 {
-    position: absolute;
-    width: 190px;
-    height: 21px;
-    left: 260px;
-    top: 420px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    border: 2px solid #C1C5D0;
-    padding: 10px 50px 10px 20px;
-    border-radius: 10px;
-    color: #777777;
-}
-
-.h4-main6 {
-    position: absolute;
-    width: 190px;
-    height: 21px;
-    left: 260px;
-    top: 480px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    border: 2px solid #C1C5D0;
-    padding: 10px 50px 10px 20px;
-    border-radius: 10px;
-    color: #777777;
-}
-
-.em-main {
-    position: absolute;
-    width: 38px;
-    height: 21px;
-    left: 260px;
-    top: 550px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    text-decoration-line: underline;
-    color: #777777;
-}
-
-a {
-    margin-left: 30px;
-    color: #3366FF;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-}
-
-.input-male {
-    position: absolute;
-    left: 260px;
-    top: 375px;
-}
-
-.male {
-    position: absolute;
-    width: 37px;
-    height: 21px;
-    left: 283px;
-    top: 360px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #777777;
-}
-
-.input-female {
-    position: absolute;
-    left: 360px;
-    top: 375px;
-}
-
-.female {
-    position: absolute;
-    width: 37px;
-    height: 21px;
-    left: 383px;
-    top: 360px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #777777;
-}
-
-.photo {
-    position: absolute;
-    width: 160px;
-    height: 160px;
-    right: 120px;
-    top: 80px;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-}
-
-.img-main {
-    width: 110px;
-    position: absolute;
-    filter: brightness(50%);
-    padding: 10px;
-}
-
-.img2-main {
-    position: absolute;
-    border: 3px solid #3366FF;
-    border-radius: 50%;
-    padding: 55px;
-}
-
-.choose-photo {
-    position: absolute;
-    width: 300px;
-    right: 40px;
-    top: 265px;
-}
-
-.h3-choose-photo {
-    position: absolute;
-    box-sizing: border-box;
-    width: 255px;
-    left: 20px;
-    height: 40px;
-    padding-top: 7px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: 1px;
-    color: #3366FF;
-    border: 1.7px solid #3366FF;
-    border-radius: 15px;
-}
-
-.h3-choose-photo2 {
-    position: absolute;
-    width: 140px;
-    height: 18px;
-    left: 20px;
-    top: 70px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-    letter-spacing: 0.5px;
-    color: rgba(55, 58, 66, 0.75);
-}
-
-.h3-choose-photo3 {
-    position: absolute;
-    width: 200px;
-    height: 18px;
-    left: 20px;
-    top: 100px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-    letter-spacing: 0.5px;
-    color: rgba(55, 58, 66, 0.75);
-}
-
-.btn-save {
-    position: absolute;
-    width: 300px;
-    left: 70px;
-    bottom: 50px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 1px;
-    color: #FFFFFF;
-    background-color: #3366FF;
-    border: none;
-    border-radius: 15px;
-    padding: 8px;
-}
-
-.left-main {
-    position: absolute;
-    width: 470px;
-    height: 700px;
-}
-
-.img-left-main {
-    box-sizing: border-box;
-    position: absolute;
-    top: 45px;
-    left: 50px;
-    border: 2px solid #3366FF;
-    border-radius: 50%;
-    padding: 2px;
-}
-
-.h4-left-main {
-    position: absolute;
-    width: 107px;
-    height: 21px;
-    left: 120px;
-    top: 32px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #373A42;
-}
-
-.h4-left-main2 {
-    position: absolute;
-    width: 110px;
-    height: 18px;
-    left: 120px;
-    top: 60px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.5px;
-    color: rgba(55, 58, 66, 0.75);
-}
-
-.img2-left-main {
-    position: absolute;
-    left: 50px;
-    top: 150px;
-}
-
-.img3-left-main {
-    position: absolute;
-    left: 100px;
-    top: 200px;
-}
-
-.img4-left-main {
-    position: absolute;
-    left: 100px;
-    top: 250px;
-}
-
-.img5-left-main {
-    position: absolute;
-    left: 100px;
-    top: 300px;
-}
-
-.img6-left-main {
-    position: absolute;
-    left: 50px;
-    top: 350px;
-}
-
-.img7-left-main {
-    position: absolute;
-    left: 50px;
-    top: 400px;
-}
-
-.img8-left-main {
-    position: absolute;
-    left: 50px;
-    top: 450px;
-}
-
-.img9-left-main {
-    position: absolute;
-    left: 50px;
-    top: 500px;
-}
-
-.img10-left-main {
-    position: absolute;
-    left: 53.5px;
-    top: 505px;
-}
-
-.h1-left-main {
-    position: absolute;
-    width: 51px;
-    height: 21px;
-    left: 85px;
-    top: 142px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #373A42;
-}
-
-.h1-left-main2 {
-    position: absolute;
-    width: 51px;
-    height: 21px;
-    left: 135px;
-    top: 188px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #373A42;
-}
-
-.h1-left-main3 {
-    position: absolute;
-    width: 110px;
-    height: 21px;
-    left: 135px;
-    top: 242px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #3366FF;
-}
-
-.h1-left-main4 {
-    position: absolute;
-    width: 140px;
-    height: 21px;
-    left: 135px;
-    top: 292px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #373A42;
-}
-
-.h1-left-main5 {
-    position: absolute;
-    width: 140px;
-    height: 21px;
-    left: 85px;
-    top: 341px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #373A42;
-}
-
-.h1-left-main6 {
-    position: absolute;
-    width: 140px;
-    height: 21px;
-    left: 85px;
-    top: 389px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #373A42;
-}
-
-.h1-left-main7 {
-    position: absolute;
-    width: 140px;
-    height: 21px;
-    left: 85px;
-    top: 442px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #373A42;
-}
-
-.h1-left-main8 {
-    position: absolute;
-    width: 140px;
-    height: 21px;
-    left: 85px;
-    top: 489px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: #F03800;
-}
-
-.hr {
-    position: absolute;
-    width: 90px;
-    height: 0px;
-    left: 90px;
-    top: 201px;
-    border: 1px solid #000000;
-}
-
-.img-bawah {
-    position: absolute;
-    left: 53%;
-    top: 62.5%;
-}
-
-.img2-bawah {
-    position: absolute;
-    left: 53%;
-    top: 71%;
-}
-
 .menu-hamburger {
     display: none;
 }
@@ -1628,61 +988,44 @@ a {
     }
     .container {
         width: 100%;
+        height: 1900px;
         background-color: #FFFFFF;
-        height: 2150px;
-    }
-    .left-main {
-        width: 100%;
-    }
-    .img2-left-main {
-        display: none;
-    }
-    .mobile-delete {
-        display: none;
-    }
-    .photo {
-        left: 37%;
-        top: 60px;
     }
     .main {
         width: 100%;
+        margin: 0;
+        left: -2rem;
+        top: 80px;
+    }
+    .container-main {
+        width: 100%;
+    }
+    .container2-main {
+        width: 100%;
         left: 0;
+        top: 35rem;
     }
-    .profile-main {
-        left: 50px;
-        top: 0px;
-    }
-    .main-mobile {
-        position: absolute;
-        top: 8rem;
-    }
-    .main-mobile2 {
-        position: absolute;
-        top: 8rem;
-    }
-    .choose-photo {
+    .container2-main-mobile {
         display: none;
     }
-    .btn-save {
-        width: 80%;
-        bottom: -5rem;
-        padding: 10px;
-    }
-    .panah-bottom {
+    .container2-main-mobile-2 {
         position: absolute;
-        width: 100px;
-        height: 100px;
-        top: 33rem;
-        left: 25rem;
+        top: -17rem;
     }
-    .img-bawah {
-        top: 1.3rem;
+    .btn-container2-main {
+        width: 200px;
+        left: 250px;
     }
-    .img2-bawah {
-        top: 5.1rem;
+    .h3-container2-main4 {
+        top: 300px;
+    }
+    .h3-container2-main8 {
+        top: 325px;
+        left: -4.2rem;
+        font-size: 18px;
     }
     .footer {
-        top: 57rem;
+        top: 43rem;
         left: -8rem;
     }
     .footer-wetick {
@@ -1768,13 +1111,13 @@ a {
     .footer-company {
         position: absolute;
         width: 100%;
-        top: 50rem;
+        top: 48rem;
         left: 12rem;
         display: flex;
         flex-direction: column;
     }
     .h2-footer {
-        top: 67rem;
+        top: 65rem;
     }
 }
     </style>
@@ -1784,12 +1127,12 @@ a {
         <header class="header">
             <section>
                 <figure>
-                    <img src="../image/Fill 1.png" class="img-header">
-                    <img src="../image/Wetick.png" class="img2-header">
-                    <img src="../image/menu-hamburger.png" class="menu-hamburger">
+                    <img src="./asset/image/Fill 1.png" class="img-header">
+                    <img src="./asset/image/Wetick.png" class="img2-header">
+                    <img src="./asset/image/menu-hamburger.png" class="menu-hamburger">
                 </figure>
             </section>
-            <Section>
+            <section>
                 <nav>
                     <ul>
                         <a href="../Home/home.html" class="li-nav-header">Home</a>
@@ -1797,90 +1140,84 @@ a {
                         <a href="../Event/event.html" class="li3-nav-header">Location</a>
                     </ul>
                 </nav>
-            </Section>
+                <hr class="hr-nav-header">
+            </section>
             <section>
-                <img src="../image/Avatar.png" class="img3-header">
-                <h3 class="h3-header">Jhon Tomson</h3>
+                <a href="../Profile/profile.html">
+                    <img src="./asset/image/Avatar.png" class="img3-header">
+                    <h3 class="h3-header">Jhon Tomson</h3>
+                </a>
             </section>
         </header>
         <main class="main">
-            <h1 class="profile-main">Profile</h1>
-            <section class="main-mobile">
-                <h3 class="h3-main">Name</h3>
-                <h3 class="h3-main2">Username</h3>
-                <h3 class="h3-main3">Email</h3>
-                <h3 class="h3-main4">Phone Number</h3>
-                <h3 class="h3-main5">Gender</h3>
-                <h3 class="h3-main6">Profession</h3>
-                <h3 class="h3-main7">Nationality</h3>
-                <h3 class="h3-main8">Birthday Date</h3>
-            </section>
-            <section class="main-mobile2">
-                <input type="text" class="h4-main" placeholder="Jhon Tomson"></input>
-                <h4 class="h4-main2">@jhont0<a href="#">Edit</a></h4>
-                <h4 class="h4-main3">jhont0@mail.com<a href="#">Edit</a></h4>
-                <h4 class="h4-main4">081234567890<a href="#">Edit</a></h4>
-                <input type="text" class="h4-main5" placeholder="Entrepreneur"></input>
-                <input type="text" class="h4-main6" placeholder="Indonesia"></input>
-                <em class="em-main">24/10/2000<a href="#">Edit</a></em>
-                <input type="radio" class="input-male" name="gender"><p class="male">Male</p>
-                <input type="radio" class="input-female" name="gender"><p class="female">Female</p>
-            </section>
-            <!-- Elemen Untuk Mobile -->
-            <Section>
-                <figure class="photo">
-                    <img src="../image/Avatar.png" class="img-main">
-                    <img src="../image/kamera.png" class="img2-main">
-                </figure>
-            </Section>
-            <section class="choose-photo">
-                <h3 class="h3-choose-photo">Choose Photo</h3>
-                <h3 class="h3-choose-photo2">Image size: max, 2 MB</h3>
-                <h3 class="h3-choose-photo3">Image formats: .JPG, .JPEG, .PNG</h3>
-            </section>
-            <button class="btn-save">Save</button>
-            <section>
-                <figure class="panah-bottom">
-                    <img src="../image/panah bawah.png" class="img-bawah">
-                    <img src="../image/panah bawah.png" class="img2-bawah">
-                </figure>
-            </section>
-        </main>
-            <section class="left-main">
-                <article class="mobile-delete">
+            <section class="container-main">
+                <article class="tambah">
+                    <h1 class="tanda-tambah"> + </h1>
+                </article>
+                <article>
                     <figure>
-                        <img src="../image/Vector.png" class="img2-left-main">
-                        <img src="../image/Vector (1).png" class="img3-left-main">
-                        <img src="../image/Vector (3).png" class="img4-left-main">
-                        <img src="../image/Vector (4).png" class="img5-left-main">
-                        <img src="../image/Vector (5).png" class="img6-left-main">
-                        <img src="../image/Vector (6).png" class="img7-left-main">
-                        <img src="../image/Vector (7).png" class="img8-left-main">
-                        <img src="../image/Vector (8).png" class="img9-left-main">
-                        <img src="../image/Vector (9).png" class="img10-left-main">
-                        <img src="../image/Avatar.png" class="img-left-main">
+                        <img src="./asset/image/Ellipse 8.png" class="img-container-main">
+                        <img src="./asset/image/Vector-blue.png" class="img2-container-main">
+                        <img src="./asset/image/panah atas.png" class="img3-container-main">
                     </figure>
-                    <h4 class="h4-left-main">Jhon Tomson</h4>
-                    <h4 class="h4-left-main2">Entrepreneur, ID</h4>
-                    <h1 class="h1-left-main">Profile</h1>
-                    <h1 class="h1-left-main2">Card</h1>
-                    <h1 class="h1-left-main3">Edit Profile</h1>
-                    <h1 class="h1-left-main4">Change Password</h1>
-                    <h1 class="h1-left-main5">My Booking</h1>
-                    <h1 class="h1-left-main6">My Wishlist</h1>
-                    <h1 class="h1-left-main7">Setting</h1>
-                    <h1 class="h1-left-main8">Logout</h1>
-                    <hr class="hr">
+                    <h1 class="h1-container-main">Payment Method</h1>
+                    <h5 class="h5-container-main">Card</h5>
+                </article>
+                <article class="card">
+                    <figure>
+                        <img src="./asset/image/Mastercard-logo.png" class="img-card">
+                        <img src="./asset/image/chip.png" class="img2-card">
+                    </figure>
+                    <h3 class="h3-card">****</h3>
+                    <h3 class="h3-card2">****</h3>
+                    <h3 class="h3-card3">****</h3>
+                    <h3 class="h3-card4">1424</h3>
+                    <h5 class="h5-card">Jhon Tomson</h5>
+                    <h5 class="h5-card2">Exp. 24 / 03</h5>
+                </article>
+                <article>
+                    <figure>
+                        <img src="./asset/image/Ellipse 7.png" class="img-footer-container-main">
+                        <img src="./asset/image/Ellipse 7.png" class="img2-footer-container-main">
+                        <img src="./asset/image/Ellipse 7.png" class="img3-footer-container-main">
+                        <img src="./asset/image/ok.png" class="img4-footer-container-main">
+                        <img src="./asset/image/Vector (1)-kuning.png" class="img5-footer-container-main">
+                        <img src="./asset/image/Vector (3)-dolar.png" class="img6-footer-container-main">
+                        <img src="./asset/image/panah bawah.png" class="img-opsi-transfer">
+                        <img src="./asset/image/panah bawah.png" class="img2-opsi-transfer">
+                        <img src="./asset/image/panah bawah.png" class="img3-opsi-transfer">
+                    </figure>
+                    <div class="tambahan-img6"></div>
+                    <h2 class="h2-container-main">Bank Transfer</h2>
+                    <h2 class="h2-container-main2">Retail</h2>
+                    <h2 class="h2-container-main3">E-Money</h2>
                 </article>
             </section>
+            <section class="container2-main">
+                <article class="container2-main-mobile">
+                    <h1 class="h1-container2-main">Ticket Detail</h1>
+                    <h3 class="h3-container2-main">Event</h3>
+                    <h3 class="h3-container2-main2">Ticket Section</h3>
+                    <h3 class="h3-container2-main3">Quantity</h3>
+                    <h3 class="h3-container2-main5">Sights & Sounds Exhibition</h3>
+                    <h3 class="h3-container2-main6">VIP</h3>
+                    <h3 class="h3-container2-main7">2</h3>
+                </article>
+                <article class="container2-main-mobile-2">
+                    <h3 class="h3-container2-main4">Total Payment</h3>
+                    <h3 class="h3-container2-main8">$70</h3>
+                    <button class="btn-container2-main">Payment</button>
+                </article>
+            </section>
+        </main>
         <footer class="footer">
             <figure>
-                <img src="../image/Fill 1.png" class="img-footer">
-                <img src="../image/Wetick.png" class="img2-footer">
-                <img src="../image/fb.png" class="fb-footer">
-                <img src="../image/wa.png" class="wa-footer">
-                <img src="../image/ig.png" class="ig-footer">
-                <img src="../image/twitter.png" class="twitter-footer">
+                <img src="./asset/image/Fill 1.png" class="img-footer">
+                <img src="./asset/image/Wetick.png" class="img2-footer">
+                <img src="./asset/image/fb.png" class="fb-footer">
+                <img src="./asset/image/wa.png" class="wa-footer">
+                <img src="./asset/image/ig.png" class="ig-footer">
+                <img src="./asset/image/twitter.png" class="twitter-footer">
             </figure>
             <section class="footer-wetick">
                 <h1 class="h1-footer">Wetick</h1>
