@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        .container {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background: #F4F7FF;
+    height: 1600px;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background: #FFFFFF;
+}
+
+.img-header {
+    position: absolute;
+    left: 3.66%;
+    right: 92.86%;
+    top: 1.54%;
+    bottom: 94.62%;
+}
+
+.img2-header {
+    position: absolute;
+    width: 100px;
+    left: 130px;
+    top: 35px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #3366FF;
+}
+
+.img3-header {
+    box-sizing: border-box;
+    position: absolute;
+    right: 320px;
+    top: 25px;
+    border: 2px solid #3366FF;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.li-nav-header {
+    position: absolute;
+    width: 46px;
+    height: 21px;
+    left: 525px;
+    top: 35px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #3366FF;
+}
+
+.li2-nav-header {
+    position: absolute;
+    width: 103px;
+    height: 21px;
+    left: 621px;
+    top: 35px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.li3-nav-header {
+    position: absolute;
+    width: 68px;
+    height: 21px;
+    left: 774px;
+    top: 35px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #373A42;
+}
+
+.hr-nav-header {
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    left: 533px;
+    top: 61px;
+    background: #3366FF;
+    border-radius: 10px;
+}
+
+.h3-header {
+    position: absolute;
+    width: 200px;
+    left: 1230px;
+    top: 25px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.footer {
+    position: relative;
+    top: 65rem;
+    width: 100%;
+}
+
+.img-footer {
+    position: absolute;
+    left: 190px;
+    top: 35px;
+}
+
+.img2-footer {
+    position: absolute;
+    width: 94px;
+    height: 36px;
+    left: 260px;
+    top: 55px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    color: #3366FF;
+}
+
+.h3-footer {
+    position: absolute;
+    width: 232px;
+    height: 21px;
+    left: 190px;
+    top: 105px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.h2-footer {
+    position: absolute;
+    height: 24px;
+    left: 190px;
+    top: 340px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #5A7184;
+}
+
+.fb-footer {
+    position: absolute;
+    left: 190px;
+    top: 160px;
+}
+
+.wa-footer {
+    position: absolute;
+    left: 230px;
+    top: 160px;
+}
+
+.ig-footer {
+    position: absolute;
+    left: 270px;
+    top: 160px;
+}
+
+.twitter-footer {
+    position: absolute;
+    left: 310px;
+    top: 160px;
+}
+
+.h1-footer {
+    position: absolute;
+    width: 61px;
+    height: 24px;
+    left: 575px;
+    top: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.h1-footer2 {
+    position: absolute;
+    width: 61px;
+    height: 24px;
+    left: 775px;
+    top: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.h1-footer3 {
+    position: absolute;
+    width: 61px;
+    height: 24px;
+    left: 975px;
+    top: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.p-footer {
+    position: absolute;
+    width: 90px;
+    height: 24px;
+    left: 575px;
+    top: 80px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer2 {
+    position: absolute;
+    width: 90px;
+    height: 24px;
+    left: 575px;
+    top: 120px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer3 {
+    position: absolute;
+    width: 90px;
+    height: 24px;
+    left: 575px;
+    top: 160px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer4 {
+    position: absolute;
+    width: 90px;
+    height: 24px;
+    left: 575px;
+    top: 200px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer5 {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 575px;
+    top: 240px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer6 {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 775px;
+    top: 80px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer7 {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 775px;
+    top: 120px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer8 {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 775px;
+    top: 160px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer9 {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 775px;
+    top: 200px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer10 {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 975px;
+    top: 80px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer11 {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 975px;
+    top: 120px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer12 {
+    position: absolute;
+    width: 160px;
+    height: 24px;
+    left: 975px;
+    top: 160px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer13 {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 975px;
+    top: 200px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer14 {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 975px;
+    top: 240px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.main {
+    position: absolute;
+    width: 1126px;
+    height: 915px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    margin: 40px 200px;
+}
+
+.main-stadion {
+    position: absolute;
+    top: 9rem;
+}
+
+.tiket {
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    left: 58%;
+}
+
+.tiket-name {
+    position: absolute;
+    top: 5rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.tiket-by-price {
+    position: absolute;
+    top: 5.5rem;
+    right: 12rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: right;
+    letter-spacing: 1px;
+    color: #FC1055;
+}
+
+.sort {
+    position: absolute;
+    top: 5.7rem;
+    right: 9rem;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(26, 60, 68, 0.219);
+    border-radius: 5px;
+}
+
+.tiket-blue {
+    position: absolute;
+    top: 12rem;
+    left: 0;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: #F1EAFF;
+}
+
+.tiket-section-reg {
+    position: absolute;
+    top: 11.6rem;
+    left: 3rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #373A42;
+}
+
+.tiket-section-reg span {
+    position: absolute;
+    right: -10rem;
+}
+
+.tiket-seat {
+    position: absolute;
+    top: 12.8rem;
+    left: 3rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #BDC0C4;
+}
+
+.tiket-seat span {
+    position: absolute;
+    right: -14.8rem;
+}
+
+.tiket-quantity {
+    position: absolute;
+    top: 16rem;
+    left: 3rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.tiket-quantity-minus {
+    position: absolute;
+    top: 16.2rem;
+    right: 14rem;
+    border: 2px solid #C1C5D0;
+    border-radius: 5px;
+    padding: 7px 3px;
+}
+
+.tiket-total {
+    position: absolute;
+    top: 15.3rem;
+    right: 12.3rem;
+}
+
+.tiket-quantity-plus {
+    position: absolute;
+    top: 16.2rem;
+    right: 9.6rem;
+    border: 2px solid #C1C5D0;
+    border-radius: 5px;
+}
+
+.tiket-merah {
+    position: absolute;
+    top: 20.5rem;
+    left: 0;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: #F1EAFF;
+}
+
+.tiket-section-reg-merah {
+    position: absolute;
+    top: 20.2rem;
+    left: 3rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #373A42;
+}
+
+.tiket-section-reg-merah span {
+    position: absolute;
+    right: -10rem;
+}
+
+.tiket-seat-merah {
+    position: absolute;
+    top: 21.4rem;
+    left: 3rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #BDC0C4;
+}
+
+.tiket-seat-merah span {
+    position: absolute;
+    right: -14.8rem;
+}
+
+.tiket-quantity-merah {
+    position: absolute;
+    top: 24.5rem;
+    left: 3rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.tiket-quantity-minus-merah {
+    position: absolute;
+    top: 24.5rem;
+    right: 14rem;
+    border: 2px solid #C1C5D0;
+    border-radius: 5px;
+    padding: 7px 3px;
+}
+
+.tiket-total-merah {
+    position: absolute;
+    top: 23.6rem;
+    right: 12.3rem;
+}
+
+.tiket-quantity-plus-merah {
+    position: absolute;
+    top: 24.5rem;
+    right: 9.6rem;
+    border: 2px solid #C1C5D0;
+    border-radius: 5px;
+}
+
+.tiket-yelow {
+    position: absolute;
+    top: 30.5rem;
+    left: 0;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: #F1EAFF;
+}
+
+.tiket-section-reg-yelow {
+    position: absolute;
+    top: 30.2rem;
+    left: 3rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #373A42;
+}
+
+.tiket-section-reg-yelow span {
+    position: absolute;
+    right: -10rem;
+}
+
+.tiket-seat-yelow {
+    position: absolute;
+    top: 31.4rem;
+    left: 3rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #BDC0C4;
+}
+
+.tiket-seat-yelow span {
+    position: absolute;
+    right: -14.8rem;
+}
+
+.tiket-quantity-yelow {
+    position: absolute;
+    top: 34.5rem;
+    left: 3rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.tiket-quantity-minus-yelow {
+    position: absolute;
+    top: 34.5rem;
+    right: 14rem;
+    border: 2px solid #C1C5D0;
+    border-radius: 5px;
+    padding: 7px 3px;
+}
+
+.tiket-total-yelow {
+    position: absolute;
+    top: 33.6rem;
+    right: 12.3rem;
+}
+
+.tiket-quantity-plus-yelow {
+    position: absolute;
+    top: 34.5rem;
+    right: 9.6rem;
+    border: 2px solid #C1C5D0;
+    border-radius: 5px;
+}
+
+.tiket-section {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: 5rem;
+    background-color: red;
+}
+
+.final-section {
+    position: absolute;
+    width: 156px;
+    top: 40rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #373A42;
+}
+
+.final-section span {
+    position: absolute;
+    right: -12.5rem;
+    color: #3366FF;
+}
+
+.final-quantity {
+    position: absolute;
+    width: 156px;
+    top: 43rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #373A42;
+}
+
+.final-quantity span {
+    position: absolute;
+    right: -12.5rem;
+    color: #3366FF;
+}
+
+.final-total-payment {
+    position: absolute;
+    width: 156px;
+    top: 46rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #373A42;
+}
+
+.final-total-payment span {
+    position: absolute;
+    right: -12.5rem;
+    color: #3366FF;
+}
+
+.btn-checkout {
+    position: absolute;
+    /* width: 315px;
+    height: 45px; */
+    bottom: 5rem;
+    box-shadow: 0px 8px 10px rgba(35, 149, 255, 0.3);
+    border-radius: 15px;
+    background: #3366FF;
+    border: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 15px 125px;
+}
+
+.menu-hamburger {
+    display: none;
+}
+
+.main-stadion-2 {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .img2-header {
+        left: 15%;
+    }
+    .header nav {
+        display: none;
+    }
+    .header hr {
+        display: none;
+    }
+    .img3-header {
+        display: none;
+    }
+    .h3-header {
+        display: none;
+    }
+    .menu-hamburger {
+        position: absolute;
+        top: 2.4rem;
+        right: 2rem;
+        display: block;
+    }
+    .container {
+        width: 100%;
+        background-color: #FFFFFF;
+        height: 2600px;
+    }
+    .main {
+        width: 100%;
+        margin: 0;
+    }
+    .tiket {
+        width: 100%;
+        left: 10%;
+        top: 30rem;
+    }
+    .footer {
+        top: 87rem;
+        left: -8rem;
+    }
+    .footer-wetick {
+        position: absolute;
+        width: 100%;
+        top: 15rem;
+        left: 12rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .h1-footer {
+        position: static;
+    }
+    .h1-footer2 {
+        position: static;
+    }
+    .h1-footer3 {
+        position: static;
+    }
+    .p-footer {
+        position: static;
+    }
+    .p-footer2 {
+        position: static;
+        margin-top: 0;
+    }
+    .p-footer3 {
+        position: static;
+        margin-top: 0;
+    }
+    .p-footer4 {
+        position: static;
+        margin-top: 0;
+    }
+    .p-footer5 {
+        position: static;
+        margin-top: 0;
+    }
+    .p-footer6 {
+        position: static;
+        margin-top: 0;
+    }
+    .p-footer7 {
+        position: static;
+        margin-top: 0;
+    }
+    .p-footer8 {
+        position: static;
+        margin-top: 0;
+    }
+    .p-footer9 {
+        position: static;
+        margin-top: 0;
+    }
+    .p-footer10 {
+        position: static;
+        margin-top: 0;
+    }
+    .p-footer11 {
+        position: static;
+        margin-top: 0;
+    }
+    .p-footer12 {
+        position: static;
+        margin-top: 0;
+    }
+    .p-footer13 {
+        position: static;
+        margin-top: 0;
+    }
+    .p-footer14 {
+        position: static;
+        margin-top: 0;
+    }
+    .footer-features {
+        position: absolute;
+        width: 100%;
+        top: 33rem;
+        left: 12rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-company {
+        position: absolute;
+        width: 100%;
+        top: 50rem;
+        left: 12rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .h2-footer {
+        top: 65rem;
+    }
+    .main-stadion-2 {
+        position: absolute;
+        display: block;
+        width: 80%;
+        left: 7%;
+        top: 7rem;
+    }
+    .main-stadion {
+        display: none;
+    }
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <section>
+                <figure>
+                    <img src="../image/Fill 1.png" class="img-header">
+                    <img src="../image/Wetick.png" class="img2-header">
+                    <!-- Header Menu Untuk Mobile -->
+                    <img src="../image/menu-hamburger.png" class="menu-hamburger">
+                </figure>
+            </section>
+            <section>
+                <nav>
+                    <ul>
+                        <a href="../Home/home.html" class="li-nav-header">Home</a>
+                        <li class="li2-nav-header">Create Event</li>
+                        <a href="../Event/event.html" class="li3-nav-header">Location</a>
+                    </ul>
+                </nav>
+                <hr class="hr-nav-header">
+            </section>
+            <section>
+                <a href="../Profile/profile.html">
+                    <img src="../image/Avatar.png" class="img3-header">
+                    <h3 class="h3-header">Jhon Tomson</h3>
+                </a>
+            </section>
+        </header>
+        <main class="main">
+            <section>
+                <figure>
+                    <img src="../image/stadion.png" class="main-stadion">
+                    <!-- Main Gambar Untuk Mobile -->
+                    <img src="../image/stadion-2.png" class="main-stadion-2">
+                </figure>
+            </section>
+            <section class="tiket">
+                <article>
+                    <h1 class="tiket-name">Tickets</h1>
+                    <h1 class="tiket-by-price">BY PRICE</h1>
+                    <img src="../image/sort.png" class="sort">
+                </article>
+                <article class="blue">
+                    <figure>
+                        <img src="../image/tiket-blue.png" class="tiket-blue">
+                        <img src="../image/plus.png" class="tiket-quantity-plus">
+                        <img src="../image/minus.png" class="tiket-quantity-minus">
+                    </figure>
+                    <h1 class="tiket-section-reg">Section reg, Row 1<span>$15</span></h1>
+                    <h1 class="tiket-seat">12 Seats available<span>per person</span></h1>
+                    <h1 class="tiket-quantity">Quantity</h1>
+                    <p class="tiket-total">0</p>
+                </article>
+                <article class="merah">
+                    <figure>
+                        <img src="../image/tiket-merah.png" class="tiket-merah">
+                        <img src="../image/minus.png" class="tiket-quantity-minus-merah">
+                        <img src="../image/plus.png" class="tiket-quantity-plus-merah">
+                    </figure>
+                    <h1 class="tiket-section-reg-merah">Section vip, Row 2<span>$35</span></h1>
+                    <h1 class="tiket-seat-merah">9 Seats available<span>per person</span></h1>
+                    <h1 class="tiket-quantity-merah">Quantity</h1>
+                    <p class="tiket-total-merah">2</p>
+                </article>
+                <article class="yelow">
+                    <figure>
+                        <img src="../image/minus.png" class="tiket-quantity-minus-yelow">
+                        <img src="../image/tiket-yelow.png" class="tiket-yelow">
+                        <img src="../image/plus.png" class="tiket-quantity-plus-yelow">
+                    </figure>
+                    <h1 class="tiket-section-reg-yelow">Section vvip, Row 3<span>$50</span></h1>
+                    <h1 class="tiket-seat-yelow">6 Seats available<span>per person</span></h1>
+                    <h1 class="tiket-quantity-yelow">Quantity</h1>
+                    <p class="tiket-total-yelow">0</p>
+                </article>
+                <article>
+                    <h1 class="final-section">Ticket Section<span>VIP</span></h1>
+                    <h1 class="final-quantity">Quantity<span>2</span></h1>
+                    <h1 class="final-total-payment">Total Payment<span>$70</span></h1>
+                    <a href="./payment.html" class="btn-checkout">Checkout</a>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">
+            <figure>
+                <img src="../image/Fill 1.png" class="img-footer">
+                <img src="../image/Wetick.png" class="img2-footer">
+                <img src="../image/fb.png" class="fb-footer">
+                <img src="../image/wa.png" class="wa-footer">
+                <img src="../image/ig.png" class="ig-footer">
+                <img src="../image/twitter.png" class="twitter-footer">
+            </figure>
+            <h3 class="h3-footer">Find events you love with our</h3>
+            <h2 class="h2-footer">© 2020 Wetick All Rights Reserved</h2>
+            <section class="footer-wetick">
+                <h1 class="h1-footer">Wetick</h1>
+                <p class="p-footer">Abaout Us</p>
+                <p class="p-footer2">Features</p>
+                <p class="p-footer3">Blog</p>
+                <p class="p-footer4">Payments</p>
+                <p class="p-footer5">Mobile App</p>
+            </section>
+            <section class="footer-features">
+                <h1 class="h1-footer2">Features</h1>
+                <p class="p-footer6">Booking</p>
+                <p class="p-footer7">Create Event</p>
+                <p class="p-footer8">Discover</p>
+                <p class="p-footer9">Register</p>
+            </section>
+            <section class="footer-company">
+                <h1 class="h1-footer3">Company</h1>
+                <p class="p-footer10">Partnership</p>
+                <p class="p-footer11">Help</p>
+                <p class="p-footer12">Terms of Service</p>
+                <p class="p-footer13">Privacy Policy</p>
+                <p class="p-footer14">Sitemap</p>
+            </section>
+        </footer>
+</body>
+</html>

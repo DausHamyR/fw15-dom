@@ -1,0 +1,163 @@
+body{
+    font-family: Poppins;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo > .text {
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo > .text > span:nth-child(1) {
+    color: #3366FF;
+}
+.logo > .text > span:nth-child(2) {
+    color: #FF3D71;
+}
+.people > img {
+    max-width: 500px;
+    height: auto;
+    -webkit-mask-image: linear-gradient(rgba(0,0,0,1) 50%, rgba(0,0,0,0.1), rgba(0,0,0,0));
+    mask-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.1));
+}
+.icon > img{
+    width: 16px;
+    height: 16px;
+}
+.event-lists {
+    display: inline-flex;
+    gap: 30px;
+}
+.event-lists > .event{
+    position: relative;
+    width: 260px;
+    height: 376px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.event-lists > .event > img {
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+}
+.event-lists > .event > .text{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7), rgba(0,0,0,1));
+    width: 100%;
+    color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.event-lists > .event > .text > .title {
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+.event-lists > .event > .text > .attendant-lists {
+    display: flex;
+    margin-left: 10px;
+}
+.event-lists > .event > .text > .attendant-lists > .profile {
+    width: 29px;
+    height: 29px;
+    border-radius: 16px;
+    border: 2px solid white;
+    overflow: hidden;
+    margin-left: -10px;
+}
+.event-lists > .event > .text > .attendant-lists > .profile > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.events-overflow{
+    overflow-x: scroll;
+    margin-left: 120px;
+    padding-right: 120px;
+}
+.date-list {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.date-list .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 50px;
+    height: 75px;
+    position: relative;
+}
+.date-list .date.active {
+    border: 3px solid #FF8900;
+    border-radius: 16px;
+    color: #FF8900;
+}
+.date-list .date.active:after{
+    content: '\2022';
+    position: absolute;
+    font-size: 20px;
+    bottom: -8px;
+}
+.date-list .date-divider {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.top-section {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+}
+.top-section > .section-title {
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+.top-section > .badger {
+    background-color: #ffa6be;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #d0093e;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.top-section > .badger > div:first-child {
+    width: 50px;
+    height: 0;
+    border-top: 2px solid #EF4444;
+    border-color: #FF3D71;
+}
+.partner {
+    background-color: #373A42;
+    background-image: url(/assets/sponsor-accent.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 95px 0;
+}
+.partner > .top-section > .badger {
+    background-color: rgba(255,255,255, 0.25);
+}
+
+@media screen and (max-width: 460px){
+    .people > img {
+        max-width: 100px;
+    }
+    .date-list{
+        flex-direction: column;
+    }
+    .events-overflow{
+        margin-left: 10px;
+        padding-right: 10px;
+    }
+}

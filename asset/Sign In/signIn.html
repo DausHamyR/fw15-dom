@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="container mx-auto flex h-[100vh]">
+        <section class="bg-blue-500 w-[50%] max-sm:hidden">
+            <img src="../image/male.png" class="relative left-[55%] top-[300px]">
+            <img src="../image/female.png" class="relative left-[5%] top-[-90px]">
+        </section>
+        <section class="bg-white w-[50%] max-sm:w-full">
+            <div class="w-[70%] h-[80vh] my-[80px] mx-[15%]">
+                <a href="../Home/home.html" class="w-full relative top-[50px] flex">
+                    <img src="../image/Fill 1.png">
+                    <img src="../image/Wetick.png" class="w-[94px] h-[36px] top-[20px] relative">
+                </a>
+                <div class="w-full relative top-[80px]">
+                    <h1 class="text-3xl mb-[15px]">Sign In</h1>
+                    <h1 class="max-sm:w-[250px]">Hi, Welcome back to Urticket!</h1>
+                </div>
+                <div>
+                    <form action="">
+                        <input type="text" placeholder="Username" class="input-text-Signin w-[315px] h-[45px] bg-white border rounded-[15px] relative top-[110px] pl-[25px] tracking-wide">
+                        <input type="email" placeholder="Email" class="input-email-Signin w-[315px] h-[45px] bg-white border rounded-[15px] relative top-[125px] pl-[25px] tracking-wide">
+                        <input type="password" placeholder="Password" class="input-password-Signin w-[315px] h-[45px] bg-white border rounded-[15px] relative top-[140px] pl-[25px] tracking-wide">
+                    </form>
+                    <div class="relative top-[150px] flex text-blue-500">
+                        <a href="../Forgot Password/forgotPassword.html" class="relative left-[40%] tracking-wide font-bold">Forgot Password?</a>
+                    </div>
+                    <button class="btn-form-signin w-[315px] h-[45px] bg-blue-500 rounded-[15px] relative top-[185px] text-white text-lg tracking-wider">Sign In</button>
+                </div>
+                <div class="relative top-[205px]">
+                    <p class="relative left-[25%]">or sign in with</p>
+                    <div class="w-[70px] h-[35px] bg-white border-2 relative top-[20px] left-[40%] rounded-[5px] flex justify-center items-center">
+                        <img src="../image/fb-full.png" class="w-[20px] h-[20px]">
+                    </div>
+                    <div class="w-[70px] h-[35px] bg-white border-2 relative top-[-15px] left-[15%] rounded-[5px] flex justify-center items-center">
+                        <img src="../image/goggle.png" class="w-[24px] h-[24px]">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./soal-2.js"></script>
+</body>
+</html>

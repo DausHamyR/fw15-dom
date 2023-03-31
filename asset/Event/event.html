@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Page</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #F4F7FF;
+    height: 1600px;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background: #FFFFFF;
+}
+
+.img-header {
+    position: absolute;
+    left: 3.66%;
+    right: 92.86%;
+    top: 1.54%;
+    bottom: 94.62%;
+}
+
+.img2-header {
+    position: absolute;
+    width: 100px;
+    left: 130px;
+    top: 35px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #3366FF;
+}
+
+.img3-header {
+    box-sizing: border-box;
+    position: absolute;
+    right: 320px;
+    top: 25px;
+    border: 2px solid #3366FF;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.li-nav-header {
+    position: absolute;
+    width: 46px;
+    height: 21px;
+    left: 525px;
+    top: 35px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #3366FF;
+}
+
+.li2-nav-header {
+    position: absolute;
+    width: 103px;
+    height: 21px;
+    left: 621px;
+    top: 35px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #373A42;
+}
+
+.li3-nav-header {
+    position: absolute;
+    width: 68px;
+    height: 21px;
+    left: 774px;
+    top: 35px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.hr-nav-header {
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    left: 533px;
+    top: 61px;
+    background: #3366FF;
+    border-radius: 10px;
+}
+
+.h3-header {
+    position: absolute;
+    width: 200px;
+    left: 1210px;
+    top: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.footer {
+    position: relative;
+    top: 65rem;
+    width: 100%;
+}
+
+.img-footer {
+    position: absolute;
+    left: 190px;
+    top: 35px;
+}
+
+.img2-footer {
+    position: absolute;
+    width: 94px;
+    height: 36px;
+    left: 260px;
+    top: 55px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    color: #3366FF;
+}
+
+.h3-footer {
+    position: absolute;
+    width: 232px;
+    height: 21px;
+    left: 190px;
+    top: 105px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.h2-footer {
+    position: absolute;
+    height: 24px;
+    left: 190px;
+    top: 340px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #5A7184;
+}
+
+.fb-footer {
+    position: absolute;
+    left: 190px;
+    top: 160px;
+}
+
+.wa-footer {
+    position: absolute;
+    width: 1.2rem;
+    left: 230px;
+    top: 160px;
+}
+
+.ig-footer {
+    position: absolute;
+    left: 270px;
+    top: 160px;
+}
+
+.twitter-footer {
+    position: absolute;
+    left: 310px;
+    top: 160px;
+}
+
+.h1-footer {
+    position: absolute;
+    width: 61px;
+    height: 24px;
+    left: 575px;
+    top: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.h1-footer2 {
+    position: absolute;
+    width: 61px;
+    height: 24px;
+    left: 775px;
+    top: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.h1-footer3 {
+    position: absolute;
+    width: 61px;
+    height: 24px;
+    left: 975px;
+    top: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.p-footer {
+    position: absolute;
+    width: 90px;
+    height: 24px;
+    left: 575px;
+    top: 80px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer2 {
+    position: absolute;
+    width: 90px;
+    height: 24px;
+    left: 575px;
+    top: 120px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer3 {
+    position: absolute;
+    width: 90px;
+    height: 24px;
+    left: 575px;
+    top: 160px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer4 {
+    position: absolute;
+    width: 90px;
+    height: 24px;
+    left: 575px;
+    top: 200px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer5 {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 575px;
+    top: 240px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer6 {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 775px;
+    top: 80px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer7 {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 775px;
+    top: 120px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer8 {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 775px;
+    top: 160px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer9 {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 775px;
+    top: 200px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer10 {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 975px;
+    top: 80px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer11 {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 975px;
+    top: 120px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer12 {
+    position: absolute;
+    width: 160px;
+    height: 24px;
+    left: 975px;
+    top: 160px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer13 {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 975px;
+    top: 200px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.p-footer14 {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    left: 975px;
+    top: 240px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #C1C5D0;
+}
+
+.main {
+    position: absolute;
+    width: 80%;
+    height: 915px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    margin: 40px 0;
+    left: 10%;
+    object-fit: cover;
+}
+
+.main-img {
+    position: absolute;
+    width: 280px;
+    top: 80px;
+    left: 55px;
+    border-radius: 40px;
+} 
+
+.main-love-add-wishlist {
+    position: absolute;
+    width: 31px;
+    top: 29.2rem;
+    left: 4.5rem;
+} 
+
+.main-h1-add-wishlist {
+    position: absolute;
+    height: 30px;
+    left: 7rem;
+    top: 29.4rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+                    /* Main2 */
+
+.main2 {
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    left: 35%;
+}
+
+.main2-judul {
+    position: absolute;
+    width: 200px;
+    top: 4rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    color: #373A42;
+}
+
+.main2-addres {
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.main2-time {
+    position: absolute;
+    top: 10rem;
+    left: 22.5rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.main2-Attendees {
+    position: absolute;
+    top: 13rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #373A42;
+}
+
+.main2-Attendees-img {
+    position: absolute;
+    top: 15rem;
+}
+.main2-Attendees-img2 {
+    position: absolute;
+    top: 15rem;
+    left: 1.2rem;
+}
+.main2-Attendees-img3 {
+    position: absolute;
+    top: 15rem;
+    left: 2.4rem;
+}
+.main2-Attendees-img4 {
+    position: absolute;
+    top: 15rem;
+    left: 3.6rem;
+}
+
+.main2-Attendees-62 {
+    position: absolute;
+    font-size: 12px;
+    top: 15.5rem;
+    left: 3.8rem;
+    color: white;
+}
+
+.main2-event-detail {
+    position: absolute;
+    top: 20.5rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.main2-isi-event-detail {
+    position: absolute;
+    width: 390px;
+    top: 23rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: rgba(55, 58, 66, 0.75);
+}
+
+.main2-read-more {
+    position: absolute;
+    top: 25.8rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #3366FF;
+}
+
+.main2-location {
+    position: absolute;
+    top: 28rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #373A42;
+}
+
+.main2-img-location {
+    position: absolute;
+    top: 31.7rem;
+    width: 315px;
+    height: 151px;
+    border-radius: 20px;
+}
+
+.main2-btn-buy-tiket {
+    position: absolute;
+    /* height: 45px; */
+    top: 43rem;
+    background: #3366FF;
+    box-shadow: 0px 8px 10px rgba(35, 149, 255, 0.3);
+    border-radius: 15px;
+    padding: 15px 110px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    border: none;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.map {
+    position: absolute;
+    top: 9.8rem;
+    left: 0rem;
+}
+
+.clock {
+    position: absolute;
+    top: 9.8rem;
+    left: 20.4rem;
+}
+
+.menu-hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .img2-header {
+        left: 15%;
+    }
+    .header-avatar {
+        display: none;
+    }
+    .header nav {
+        display: none;
+    }
+    .hr-nav-header {
+        display: none;
+    }
+    .menu-hamburger {
+        position: absolute;
+        top: 2.4rem;
+        right: 2rem;
+        display: block;
+    }
+    .container {
+        background: #FFFFFF;
+    }
+    .main {
+        width: 100%;
+        left: 0;
+    }
+    .main-img {
+        width: 100%;
+        height: 85%;
+        left: 0;
+        top: 0;
+        border-radius: 0;
+        filter: brightness(0.7);
+    }
+    .main2 {
+        width: 80%;
+        left: 10%;
+    }
+    .main2-judul {
+        width: 100%;
+        top: 20%;
+        font-size: 300%;
+        line-height: 4rem;
+        top: 150px;
+        color: #FFFFFF;
+    }
+    .main-love-add-wishlist {
+        top: 10rem;
+        left: 30rem;
+    }
+    .map {
+        top: 33%;
+        width: 5%;
+        height: 5%;
+    }
+    .main2-addres {
+        top: 33.3%;
+        color: white;
+        font-size: 200%;
+        left: 2.5rem;
+    }
+    .clock {
+        top: 38%;
+        left: 0;
+        width: 5%;
+        height: 5%;
+    }
+    .main2-time {
+        top: 38.5%;
+        font-size: 200%;
+        left: 2.5rem;
+        color: white;
+    }
+    .main2-Attendees {
+        top: 45%;
+        color: white;
+        font-size: 1.5rem;
+    }
+    .main2-Attendees-img {
+        top: 50%;
+    }
+    .main2-Attendees-img2 {
+        top: 50%;
+    }
+    .main2-Attendees-img3 {
+        top: 50%;
+    }
+    .main2-Attendees-img4 {
+        top: 50%;
+    }
+    .main2-Attendees-62 {
+        top: 51%;
+    }
+    .main2-event-detail {
+        top: 90%;
+        color: black;
+    }
+    .main2-isi-event-detail {
+        top: 94%;
+    }
+    .main2-read-more {
+        top: 99%;
+    }
+    .main2-location {
+        top: 105%;
+    }
+    .main2-img-location {
+        width: 100%;
+        height: auto;
+        top: 110%;
+        left: 0;
+    }
+    .main2-btn-buy-tiket {
+        width: 100%;
+        top: 138%;
+        box-sizing: border-box;
+        padding-left: 37%;
+    }
+    .footer {
+        top: 90%;
+        width: 80%;
+        left: 10%;
+    }
+    .img-footer {
+        left: 0;
+        top: 0;
+    }
+    .img2-footer {
+        left: 16%;
+        top: 1rem;
+    }
+    .h3-footer {
+        left: 0;
+    }
+    .fb-footer {
+        left: 0;
+    }
+    .wa-footer {
+        left: 2.2rem;
+    }
+    .ig-footer {
+        left: 4.4rem;
+    }
+    .twitter-footer {
+        left: 6.6rem;
+    }
+    .main-h1-add-wishlist {
+        display: none;
+    }
+    .footer-wetick {
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        top: 16rem;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-content: end;
+    }
+    .h1-footer, .h1-footer2, .h1-footer3{
+        position: static;
+    }
+    .p-footer, .p-footer6, .p-footer10{
+        position: static;
+    }
+    .p-footer2, .p-footer7, .p-footer11{
+        position: static;
+    }
+    .p-footer3, .p-footer8, .p-footer12{
+        position: static;
+    }
+    .p-footer4, .p-footer9, .p-footer13{
+        position: static;
+    }
+    .p-footer5, .p-footer14 {
+        position: static;
+    }
+    .footer-features {
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        top: 28rem;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-content: end;
+    }
+    .footer-company {
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        top: 40rem;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-content: end;
+    }
+    .h2-footer {
+        top: 52rem;
+        left: 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <figure>
+                <!-- Logo -->
+                <img src="../image/Fill 1.png" class="img-header">
+                <img src="../image/Wetick.png" class="img2-header">
+                <!-- Header Menu Hamburger Mobile -->
+                <img src="../image/menu-hamburger.png" class="menu-hamburger">
+            </figure>
+            <!-- Header Nav Menu -->
+            <hr class="hr-nav-header">
+            <nav>
+                <ul>
+                    <a href="../Home/home.html" class="li-nav-header">Home</a>
+                    <a href="../Booking/booking.html" class="li2-nav-header">Create Event</a>
+                    <li class="li3-nav-header">Location</li>
+                </ul>
+            </nav>
+            <!-- Header Avatar -->
+            <section class="header-avatar">
+                <a href="../Profile/profile.html">
+                    <img src="../image/Avatar.png" class="img3-header">
+                    <h3 class="h3-header">Jhon Tomson</h3>
+                </a>
+            </section>
+        </header>
+        <main class="main">
+            <section>
+                <figure>
+                    <img src="../image/love-wishlist.png" class="main-love-add-wishlist">
+                    <img src="../image/Bitmap (1).png" class="main-img">
+                </figure>
+                <h1 class="main-h1-add-wishlist">Add to Wishlist</h1>
+            </section>
+            <section class="main2">
+                <article>
+                    <h1 class="main2-judul">Sights & Sounds Exhibition</h1>
+                    <i data-feather="clock" class="clock"></i>
+                    <h6 class="main2-addres">Jakarta, Indonesia</h6>
+                    <i data-feather="map-pin" class="map"></i>
+                    <h6 class="main2-time">Wed, 15 Nov, 4:00 PM</h6>
+                    <h6 class="main2-Attendees">Attendees</h6>
+                    
+                    <figure>
+                        <img src="../image/org1.png" class="main2-Attendees-img">
+                        <img src="../image/org2.png" class="main2-Attendees-img2">
+                        <img src="../image/org3.png" class="main2-Attendees-img3">
+                        <img src="../image/org4.png" class="main2-Attendees-img4">
+                    </figure>
+                </article>
+                <article>
+                    <h5 class="main2-event-detail">Event Detail</h5>
+                    <p class="main2-isi-event-detail">After his controversial art exhibition "Tear and Consume" back in November 2018, in which guests were invited to tear up…</p>
+                    <h4 class="main2-read-more">Read More</h4>
+                    <h3 class="main2-location">Location</h3>
+                    <img src="../image/peta.png" class="main2-img-location"> 
+                    <a href="./payment.html" class="main2-btn-buy-tiket">Buy Tickets</a> 
+                </article>
+                <p class="main2-Attendees-62">62 +</p>
+            </section>
+        </main>
+        <footer class="footer">
+            <figure>
+                <img src="../image/Fill 1.png" class="img-footer">
+                <img src="../image/Wetick.png" class="img2-footer">
+                <img src="../image/fb.png" class="fb-footer">
+                <img src="../image/wa.png" class="wa-footer">
+                <img src="../image/ig.png" class="ig-footer">
+                <img src="../image/twitter.png" class="twitter-footer">
+            </figure>
+            <h3 class="h3-footer">Find events you love with our</h3>
+            <h2 class="h2-footer">© 2020 Wetick All Rights Reserved</h2>
+            <section class="footer-wetick">
+                <h1 class="h1-footer">Wetick</h1>
+                <p class="p-footer">Abaout Us</p>
+                <p class="p-footer2">Features</p>
+                <p class="p-footer3">Blog</p>
+                <p class="p-footer4">Payments</p>
+                <p class="p-footer5">Mobile App</p>
+            </section>
+            <section class="footer-features">
+                <h1 class="h1-footer2">Features</h1>
+                <p class="p-footer6">Booking</p>
+                <p class="p-footer7">Create Event</p>
+                <p class="p-footer8">Discover</p>
+                <p class="p-footer9">Register</p>
+            </section>
+            <section class="footer-company">
+                <h1 class="h1-footer3">Company</h1>
+                <p class="p-footer10">Partnership</p>
+                <p class="p-footer11">Help</p>
+                <p class="p-footer12">Terms of Service</p>
+                <p class="p-footer13">Privacy Policy</p>
+                <p class="p-footer14">Sitemap</p>
+            </section>
+        </footer>
+        <script>
+            feather.replace()
+        </script>
+</body>
+</html>
