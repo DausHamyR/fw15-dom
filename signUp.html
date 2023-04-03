@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Page</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
-<body>
+<body id="signUp-page">
     <main class="container mx-auto flex h-[100vh]">
         <section class="bg-blue-500 w-[50%] max-sm:hidden">
             <img src="./asset/image/male.png" class="relative left-[55%] top-[300px]">
@@ -16,21 +17,31 @@
         </section>
         <section class="bg-white w-[50%] max-sm:w-full">
             <div class="w-[50%] h-[80vh] my-[80px] mx-[15%]">
-                <a href="../Home/home.html" class="w-[150px] relative top-[50px] flex">
+                <a href="./home.html" class="w-[150px] relative top-[50px] flex">
                     <img src="./asset/image/Fill 1.png">
                     <img src="./asset/image/Wetick.png" class="w-[94px] h-[36px] top-[20px] relative">
                 </a>
                 <div class="w-full relative top-[80px]">
                     <div class="pesan-input"></div>
                     <h1 class="text-3xl mb-[15px]">Sign Up</h1>
-                    <h1 class="max-sm:w-[250px]">Already have an account? <a href="../Sign In/signIn.html" class="text-blue-500">Log In</a></h1>
+                    <h1 class="max-sm:w-[250px]">Already have an account? <a href="./signIn.html" class="text-blue-500">Log In</a></h1>
                 </div>
                 <div>
-                    <form action="">
-                        <input type="text" placeholder="Full Name" class="input-text w-[315px] h-[45px] bg-white border rounded-[15px] relative top-[110px] pl-[25px] tracking-wide">
+                    <button id="eye-1">
+                        <i data-feather="eye" class="relative bottom-[-270px] left-[270px] z-[1]"></i>
+                    </button>
+                    <button id="eye-2">
+                        <i data-feather="eye" class="relative bottom-[-330px] left-[243px] z-[1]"></i>
+                    </button>
+                    <form>
+                        <input type="text" placeholder="Username" class="input-text w-[315px] h-[45px] bg-white border rounded-[15px] relative top-[110px] pl-[25px] tracking-wide">
+                        <div class="info-input-text relative top-[110px] ml-2 text-sm"></div>
                         <input type="email" placeholder="Email" class="input-email w-[315px] h-[45px] bg-white border rounded-[15px] relative top-[125px] pl-[25px] tracking-wide">
+                        <div class="info-input-email relative top-[125px] ml-3 text-sm"></div>
                         <input type="password" placeholder="Password" class="input-password w-[315px] h-[45px] bg-white border rounded-[15px] relative top-[140px] pl-[25px] tracking-wide">
-                        <input type="password" placeholder="Confirm Password" class="input-password2 w-[315px] h-[45px] bg-white border rounded-[15px] relative top-[155px] pl-[25px] tracking-wide">
+                        <div class="info-input-password relative top-[140px] ml-2 text-sm"></div>
+                        <input type="password" placeholder="Confirm Password" class="input-confirm-password w-[315px] h-[45px] bg-white border rounded-[15px] relative top-[155px] pl-[25px] tracking-wide">
+                        <div class="info-input-confirm-password relative top-[155px] ml-2 text-sm"></div>
                     </form>
                     <div class="relative top-[170px] flex">
                         <input type="checkbox">
@@ -41,8 +52,12 @@
             </div>
         </section>
     </main>
-    <script src="./soal-2.js"></script>
-    <script src="./soal-3.js"></script>
-    <script src="./soal-4.js"></script>
+    <!-- <script src="./asset/soal-2.js"></script> -->
+    <script src="./asset/soal-3.js"></script>
+    <script src="./asset/soal-4.js"></script>
+
+    <script>
+        feather.replace()
+    </script>
 </body>
 </html>

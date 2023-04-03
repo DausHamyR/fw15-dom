@@ -148,6 +148,9 @@ body{
 .partner > .top-section > .badger {
     background-color: rgba(255,255,255, 0.25);
 }
+.menu-toggle-hamburger :hover {
+    cursor: pointer;
+}
 
 @media screen and (max-width: 460px){
     .people > img {
